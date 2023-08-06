@@ -1,0 +1,24 @@
+<%- include('./partial/header.ejs') %>
+<%- include('./partial/navbar.ejs') %>
+
+<hr>
+<div class="container">
+    <h1>Registration Page</h1>
+    <form method="POST"> <!-- Specify the action URL and method by defaulit its /registration if not work then specify it-->
+        <div class="form-group">
+            <label for="exampleInputEmail1">Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="name1">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary" name="register">Register</button>
+    </form>
+</div>
+<%- include('./partial/footer.ejs') %>
