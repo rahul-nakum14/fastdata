@@ -13,3 +13,25 @@ Follows User > User
 Blog > Has Comments 
 Blog > Has Likes 
 Blog > Has Bookmarks 
+
+============================================
+
+
+title diagram_title
+
+// Define nodes and relationships
+User > Creates Blog Post [icon: file-text]
+User > Comments on Blog Post [icon: message-square]
+User > Likes Blog Post [icon: thumbs-up]
+User > Bookmarks Blog Post [icon: bookmark]
+User > Follows User [icon: user-plus]
+
+Creates Blog Post > Blog [icon: file-text]
+Comments on Blog Post > Comment [icon: message-square]
+Likes Blog Post > Blog [icon: thumbs-up]
+Bookmarks Blog Post > Blog [icon: bookmark]
+Follows User > User [icon: user-plus]
+
+Blog > Has Comments [icon: message-square]
+Blog > Has Likes [icon: thumbs-up]
+Blog > Has Bookmarks [icon: bookmark]
