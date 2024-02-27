@@ -1,0 +1,15 @@
+User  > Creates Blog Post 
+User > Comments on Blog Post 
+User > Likes Blog Post 
+User > Bookmarks Blog Post 
+User > Follows User 
+
+Creates Blog Post > Blog 
+Comments on Blog Post > Comment 
+Likes Blog Post > Blog 
+Bookmarks Blog Post > Blog
+Follows User > User 
+
+Blog > Has Comments 
+Blog > Has Likes 
+Blog > Has Bookmarks 
