@@ -35,3 +35,52 @@ comments.createdBy > users.id
 users.bookmarks <> blogs.id
 users.followers <> users.id
 users.following <> users.id
+
+=======================================================
+another design
+-----------------------------------------------------------
+
+title Blogging Platform ER Diagram
+// define tables
+users [icon: user]{
+  id string pk
+  fullname string
+  email string unique
+  password string
+  profileImageURL string default "/images/userDefaultAvatar.jpeg"
+  bookmarks string[]
+  followers string[]
+  following string[]
+}
+
+blogs [icon: file-text]{
+  id string pk
+  title string
+  body string
+  coverImageUrl string
+  createdBy string
+  isPrivate boolean default false
+  likes string[]
+  bookmarks string[]
+  createdAt timestamp
+  updatedAt timestamp
+}
+
+comments [icon: message-square]{
+  id string pk
+  content string
+  blogId string
+  createdBy string
+  createdAt timestamp
+  updatedAt timestamp
+}
+
+// define relationships
+blogs.createdBy > users.id
+blogs.likes <> users.id
+blogs.bookmarks <> users.id
+comments.blogId > blogs.id
+comments.createdBy > users.id
+users.bookmarks <> blogs.id
+users.followers <> users.id
+users.following <> users.id
