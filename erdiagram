@@ -1,0 +1,37 @@
+title Blogging Platform ER Diagram
+blogs [icon: file-text]{
+  id string pk
+  title string
+  body string
+  coverImageUrl string
+  createdBy string
+  isPrivate boolean
+  likes string[]
+  bookmarks string[]
+}
+comments [icon: message-square]{
+  id string pk
+  content string
+  blogId string
+  createdBy string
+}
+users [icon: user]{
+  id string pk
+  fullname string
+  email string
+  password string
+  profileImageURL string
+  bookmarks string[]
+  followers string[]
+  following string[]
+}
+// End of tables
+
+blogs.createdBy > users.id
+blogs.likes <> users.id
+blogs.bookmarks <> users.id
+comments.blogId > blogs.id
+comments.createdBy > users.id
+users.bookmarks <> blogs.id
+users.followers <> users.id
+users.following <> users.id
