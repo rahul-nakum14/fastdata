@@ -16,3 +16,29 @@ Follows User > User [icon: user-plus]
 
 Blog > Has Comments [shape: circle, icon: message-square]
 Blog > Has Likes [shape: circle, icon: thumbs-up]
+========================================
+
+2)  new with login
+=============================
+
+
+
+title User Interaction Flow
+
+// Define nodes and relationships
+
+User > Login [shape:circle]
+Login > Creates Blog Post [shape:circle, icon: file-text]
+Login > Comments on Blog Post [shape:circle,icon: message-square]
+Login > Likes Blog Post [shape:circle, icon: thumbs-up]
+Login > Bookmarks Blog Post [shape:circle,icon: bookmark]
+Login > Follows User [shape:circle ,icon: user-plus]
+
+Creates Blog Post > Blog [icon: file-text]
+Comments on Blog Post > Comment [icon: message-square]
+Likes Blog Post > Blog [icon: thumbs-up]
+Bookmarks Blog Post > Blog [icon: bookmark]
+Follows User > User [icon: user-plus]
+
+Blog > Has Comments [shape: circle, icon: message-square]
+Blog > Has Likes [shape: circle, icon: thumbs-up]
