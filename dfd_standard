@@ -1,0 +1,18 @@
+
+title User Interaction Flow
+
+// Define nodes and relationships
+User > Creates Blog Post [shape:circle, icon: file-text]
+User > Comments on Blog Post [shape:circle,icon: message-square]
+User > Likes Blog Post [shape:circle, icon: thumbs-up]
+User > Bookmarks Blog Post [shape:circle,icon: bookmark]
+User > Follows User [shape:circle ,icon: user-plus]
+
+Creates Blog Post > Blog [icon: file-text]
+Comments on Blog Post > Comment [icon: message-square]
+Likes Blog Post > Blog [icon: thumbs-up]
+Bookmarks Blog Post > Blog [icon: bookmark]
+Follows User > User [icon: user-plus]
+
+Blog > Has Comments [shape: circle, icon: message-square]
+Blog > Has Likes [shape: circle, icon: thumbs-up]
